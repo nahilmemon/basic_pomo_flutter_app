@@ -59,12 +59,12 @@ class _PomoTimerPageState extends State<PomoTimerPage> {
   // Update the durations based on which timer is currently active
   void updateDurations() {
     if (shouldIShowPomoTimer == true) {
-      duration = newPomoDuration*1000; // seconds for testing/demoing purposes
-      // duration = newPomoDuration*60*1000; // minutes
+      // duration = newPomoDuration*1000; // seconds for testing/demoing purposes
+      duration = newPomoDuration*60*1000; // minutes
       print("Pomo Duration: "+newPomoDuration.toString());
     } else {
-      duration = newBreakDuration*1000; // seconds for testing/demoing purposes
-      // duration = newBreakDuration*60*1000; // minutes
+      // duration = newBreakDuration*1000; // seconds for testing/demoing purposes
+      duration = newBreakDuration*60*1000; // minutes
       print("Break Duration: "+newBreakDuration.toString());
     }
   }
